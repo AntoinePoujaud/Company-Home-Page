@@ -17,13 +17,18 @@ section {
     align-items: center;
     width: auto;
     margin-left: 125px;
+    padding-bottom: 30px;
     height: 100%;
+}
+
+#mission, #team {
+    background-color: lightgrey;
 }
 
 .section-title {
     padding-top: 20px;
 }
-
+  
 h1 {
     font-size: 3.2rem;
     text-align: center;
@@ -50,7 +55,6 @@ nav {
     background-image: url("./img/navbar.jpg");
     background-size: cover;
     background-position: center;
-    
 }
 
 nav ul {
@@ -73,10 +77,10 @@ nav ul {
 }
 
 nav ul a {
-    text-decoration: underline;
+    text-decoration: none;
     margin-top: 60px;
     margin-right: 20px;
-    color: aqua; 
+    color: lightblue; 
 }
 
 nav ul h2 {
@@ -88,6 +92,10 @@ nav ul h2 {
 
 /* Style de la section Home */
 
+#home {
+    height: auto;
+}
+
 #main-images {
     width: 100%;
     display: flex;
@@ -98,7 +106,7 @@ nav ul h2 {
 }
 
 #logo {
-    max-width: 555px;
+    max-width: 50%;
     /* box-shadow: 0 0 5px 3px grey; */
     border-radius: 50%;
     background-color: white;
@@ -160,26 +168,23 @@ nav ul h2 {
     align-content: space-around;
     justify-content: space-around;
     width: auto;
-    background-color: violet;
 }
 
 #products article {
     display: flex;
     flex-wrap: nowrap;
-
     width: 400px;
     height: 200px;
     margin: 10px 2px;
     flex-direction: row;
     align-content: center;
     justify-content: space-around;
-    background-color: grey;
 }
 
 .product {
     width: 200px;
     height: 150px;
-    margin-top: 25px;
+    margin-top: 20px;
     border: 1px solid black;
     background-size: cover;
 }
@@ -187,7 +192,8 @@ nav ul h2 {
     width: 40%;
     height: 83%;
     text-align: center;
-    background-color: turquoise;
+    vertical-align: middle;
+    align-self: center;
 }
 
 .a {
@@ -211,12 +217,85 @@ nav ul h2 {
     background-image: url("./img/products/swan.jpg");
 }
 
-#mission, #team {
-    background-color: lightgrey;
+/* Style de la section Team */
+#team article {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 50%;
+    background-color: darkgray;
+    border-radius: 5%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+}
+
+.presentation {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    margin: 20px 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.team-img {
+    min-width: 200px;
+    min-height: 300px;
+    border: 5px solid black;
+    background-size: cover;
+}
+
+#teammate-top {
+    background-image: url("./img/teammates/teammate1.jpg");
+}
+
+#teammate-middle {
+    background-image: url("./img/teammates/teammate2.jpg");
+    background-position: 25%;
+    justify-self: flex-end;
+}
+
+#teammate-bottom {
+    background-image: url("./img/teammates/teammate3.jpg");
+    background-position: -5% 25%;
 }
 
 footer {
     width: auto;
     margin-left: 125px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #team article {
+        border-radius: 0;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .presentation {
+        width: auto;
+        vertical-align: middle;
+        padding-top: 1%;
+        border-radius: 0;
+    }
+
+    .middle  {
+        flex-direction: column-reverse;
+    }
+
+    #teammate-bottom {
+        background-position: 5% 5%;
+    }
 }
 
