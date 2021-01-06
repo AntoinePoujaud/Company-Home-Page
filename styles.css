@@ -39,7 +39,7 @@ h3 {
     text-align: center;
 }
 
-/* Style du header */
+/* Style de la navbar */
 
 nav {
     position: fixed;
@@ -72,8 +72,6 @@ nav ul {
     height: 100%;
 }
 
-
-
 nav ul a {
     text-decoration: underline;
     margin-top: 60px;
@@ -88,6 +86,7 @@ nav ul h2 {
     margin-bottom: 0;
 }
 
+/* Style de la section Home */
 
 #main-images {
     width: 100%;
@@ -100,8 +99,8 @@ nav ul h2 {
 
 #logo {
     max-width: 555px;
-    box-shadow: 0 0 5px 3px grey;
-    border-radius: 5%;
+    /* box-shadow: 0 0 5px 3px grey; */
+    border-radius: 50%;
     background-color: white;
     z-index: 1;
 }
@@ -117,7 +116,7 @@ nav ul h2 {
     background-image: url("./img/rand-img2.jpg");
     background-size: cover;
     left: 250px;
-    bottom: 100px;
+    bottom: 150px;
     z-index: 0;
 }
 
@@ -125,7 +124,7 @@ nav ul h2 {
     background-image: url("./img/rand-img1.jpg");
     background-size: cover;
     right: 250px;
-    top: 100px;
+    top: 150px;
     z-index: 0;
 }
 
@@ -152,8 +151,6 @@ nav ul h2 {
     text-decoration: underline;
     font-size: 1.75rem;
 }
-
-
 
 /* Style de la section Products */
 
@@ -189,7 +186,7 @@ nav ul h2 {
 .description {
     width: 40%;
     height: 83%;
-    text-align: justify;
+    text-align: center;
     background-color: turquoise;
 }
 
@@ -213,7 +210,6 @@ nav ul h2 {
 .e {
     background-image: url("./img/products/swan.jpg");
 }
-
 
 #mission, #team {
     background-color: lightgrey;
